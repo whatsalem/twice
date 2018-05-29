@@ -52,7 +52,7 @@ display: none;
 }
 
 
-#bg {
+.bg {
 	position:fixed;
 	top:0px;
 	left:0px;
@@ -218,7 +218,7 @@ margin:0 auto;
 }
 
 
-#bg {
+.bg {
 	background-image: url(../images/bg-720.jpg);
 	background-position:bottom center;
 	
@@ -295,7 +295,7 @@ html, body{/*background-color:#000;*/}
 	display: block;
 }
 
-#bg {
+.bg {
 	background-image: url(../images/bg-pc.jpg);
 	background-position:top center;
 	

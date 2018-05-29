@@ -1,5 +1,5 @@
 
-#mainlogo {
+.mainlogo {
 	/*	display:none;*/
 	width: 274px;
     height: 192px;
@@ -17,8 +17,7 @@
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 }
-
-#mainlogo:hover {
+.mainlogo:hover {
 	transform: scale(1.3);
 	-ms-transform: scale(1.3);
 	-o-transform: scale(1.3);
@@ -26,6 +25,7 @@
 	-webkit-transform: scale(1.3);
 	opacity: 0;
 }
+
 
 
 /* VIDEOS
