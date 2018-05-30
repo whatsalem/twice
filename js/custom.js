@@ -1,5 +1,5 @@
 setInterval(function(){ 
-	$(".mainlogo1").effect( "shake", {times:4}, 5000  );
+	$(".mainlogo1").effect( "shake", {times:4}, 1000  );
  }, 3000);
 setInterval(function(){ 
 	$(".mainlogo2").effect( "shake", {times:4}, 1000 );
@@ -23,6 +23,9 @@ $(".mainlogo1").hover(function() {
 	}
 });
 $(".mainlogo2").hover(function() {
+	$(".mainlogo2").stop();
+	$(".mainlogo3").stop();
+	$(".mainlogo1").stop();
 	$(".mainlogo2").toggleClass('hover');
 	$(".mainlogo3").toggleClass('hover');
 	$(".mainlogo1").toggleClass('hover');
@@ -35,6 +38,9 @@ $(".mainlogo2").hover(function() {
 	}
 });
 $(".mainlogo3").hover(function() {
+	$(".mainlogo2").stop();
+	$(".mainlogo3").stop();
+	$(".mainlogo1").stop();
 	$(".mainlogo2").toggleClass('hover');
 	$(".mainlogo3").toggleClass('hover');
 	$(".mainlogo1").toggleClass('hover');
