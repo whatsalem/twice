@@ -1,21 +1,13 @@
 setInterval(function(){ 
-	$(".mainlogo1").effect( "shake", {times:4}, 1000  );
- }, 3000);
-setInterval(function(){ 
-	$(".mainlogo2").effect( "shake", {times:4}, 1000 );
- }, 5000);
-setInterval(function(){ 
-	$(".mainlogo3").effect( "shake", {times:4}, 1000  );
- }, 7000);
+	$(".mainlogo2").effect( "shake", {times:4}, 1000  );
+ }, 1000);
 $(".mainlogo1").hover(function() {
 	$(".mainlogo2").toggleClass('hover');
 	$(".mainlogo3").toggleClass('hover');
 	$(".mainlogo1").toggleClass('hover');
 	$(".mainlogo2").stop();
-	$(".mainlogo3").stop();
-	$(".mainlogo1").stop();
-	$(".video1").fadeToggle("slow");
-	$(".video1").get(0).volume = 0.1;
+	$(".video1").fadeToggle(500);
+	$(".video1").get(0).volume = 0.25;
 	if ($(".video1").get(0).paused) {
 		$(".video1").get(0).play();
 	} else {
@@ -24,13 +16,11 @@ $(".mainlogo1").hover(function() {
 });
 $(".mainlogo2").hover(function() {
 	$(".mainlogo2").stop();
-	$(".mainlogo3").stop();
-	$(".mainlogo1").stop();
 	$(".mainlogo2").toggleClass('hover');
 	$(".mainlogo3").toggleClass('hover');
 	$(".mainlogo1").toggleClass('hover');
-	$(".video2").fadeToggle("slow");
-	$(".video2").get(0).volume = 0.1;
+	$(".video2").fadeToggle(500);
+	$(".video2").get(0).volume = 0.2;
 	if ($(".video2").get(0).paused) {
 		$(".video2").get(0).play();
 	} else {
@@ -39,13 +29,11 @@ $(".mainlogo2").hover(function() {
 });
 $(".mainlogo3").hover(function() {
 	$(".mainlogo2").stop();
-	$(".mainlogo3").stop();
-	$(".mainlogo1").stop();
 	$(".mainlogo2").toggleClass('hover');
 	$(".mainlogo3").toggleClass('hover');
 	$(".mainlogo1").toggleClass('hover');
-	$(".video3").fadeToggle("slow");
-	$(".video3").get(0).volume = 0.15;
+	$(".video3").fadeToggle(500);
+	$(".video3").get(0).volume = 0.2;
 	if ($(".video3").get(0).paused) {
 		$(".video3").get(0).play();
 	} else {
